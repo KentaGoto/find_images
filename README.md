@@ -7,7 +7,7 @@ Version: Alpha
 ```
 
 ## Description
-gif、jpeg、png、bmp、tiffを判定する。
+Find gif, jpeg, png, bmp, tiff.
 
 ## Requirements
 - Windows
