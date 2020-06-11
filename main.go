@@ -50,6 +50,7 @@ func main() {
 
 		_, format, err := image.DecodeConfig(f)
 
+		// debug
 		if err != nil {
 			//fmt.Println(err)
 		}
