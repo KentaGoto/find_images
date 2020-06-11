@@ -48,7 +48,7 @@ func main() {
 		f, _ := os.Open(path)
 		defer f.Close()
 
-		_, format, err := image.DecodeConfig(f)
+		_, format, err := image.DecodeConfig(f) // get the file format
 
 		// debug
 		if err != nil {
