@@ -2,10 +2,12 @@
 
 ## Usage
 ```
-$ go build
-```
-```
+$ go build  
 $ find_images.exe <DIR>
+```
+or  
+```
+$ go run main.go <DIR>
 ```
 
 ## Description
