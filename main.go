@@ -32,9 +32,7 @@ func dirwalk(dir string) []string {
 	return paths
 }
 
-// 画像かどうかを判定する。
-// 拡張子で判定するのではなく、画像自体を判定する。
-// 対応画像: gif、jpeg、png、bmp、tiff
+// Supported image types: gif、jpeg、png、bmp、tiff
 func main() {
 	var arg string
 	if len(os.Args) != 2 {
@@ -47,18 +45,25 @@ func main() {
 	paths := dirwalk(arg)
 
 	for _, path := range paths {
-		fmt.Println(path)
 		f, _ := os.Open(path)
 		defer f.Close()
 
 		_, format, err := image.DecodeConfig(f)
 
 		if err != nil {
-			fmt.Println(err)
-			//return
+			//fmt.Println(err)
 		}
 
-		fmt.Println(format)
-		fmt.Println("")
+		if ( format == "jpeg" ){
+			fmt.Println(path)
+		} else if ( format == "bmp" ){
+			fmt.Println(path)
+		} else if ( format == "gif" ){
+			fmt.Println(path)
+		} else if ( format == "tiff" ){
+			fmt.Println(path)
+		} else if ( format == "png" ){
+			fmt.Println(path)
+		}
 	}
 }
