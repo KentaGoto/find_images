@@ -2,6 +2,9 @@
 
 ## Usage
 ```
+$ go build
+```
+```
 $ find_images.exe <DIR>
 ```
 
