@@ -11,7 +11,7 @@ $ go run main.go <DIR>
 ```
 
 ## Description
-Find the image files (gif, jpeg, png, bmp, tiff). Instead of judging by the extension, the image itself is judged.  
+Searches for image files (gif, jpeg, png, bmp, tiff) under the specified directory. Instead of judging by the extension, the image itself is judged.  
 
 ## Requirements
 - Windows
