@@ -18,3 +18,6 @@ Searches for image files (gif, jpeg, png, bmp, tiff) under the specified directo
 
 ## License
 MIT
+
+## Author  
+Kenta Goto
